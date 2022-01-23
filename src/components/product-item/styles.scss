@@ -1,0 +1,144 @@
+
+.product-item  {
+    width: 98%;
+    height: auto;
+
+    .content {
+
+        font-size: 0.85rem; 
+
+        border: 1px solid #eee;
+
+        > span { display: block; }
+
+        .actual-price, .add-to-cart { 
+            background-color: var(--yellow);
+        }
+
+        .add-to-cart {
+            border: 2px solid var(--yellow);
+            visibility: hidden;
+        }
+
+        .rating { border: 1px solid #eee; }
+    }
+
+    .data-padding {
+        padding: 5px 10px;
+    }
+
+    &:hover {
+        .content .add-to-cart {
+            visibility: visible;
+        }
+    }
+}
+
+.cart-product-detail {
+
+    .product-item {
+        display: flex !important;
+        padding: 15px;
+        border: 1px solid #eee;
+        border-radius: 5px;
+
+        .content, .image img { border: none !important; }
+        .image img { border-radius: 0 !important; height: 115px; width: auto !important; }
+
+        .content {
+            padding: 0 !important;
+            padding-left: 20px !important; 
+        }
+    }
+}
+
+// cart page start
+
+.cart-products-container .cart-product-detail .product-item {
+
+    margin-bottom: 20px;
+
+    .image { height: 120px; }
+
+    .content {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .content .price-section {
+        display: none;
+    }
+
+    .content .product-name-section {
+        order: -1;
+        margin-top: 0 !important;    
+        margin-bottom: 0px !important;    
+    }
+
+    .content .reviews-section {
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+    }
+}
+
+// cart page end
+
+@media screen and (max-width: 1024px) {
+    .product-item {
+        .content .add-to-cart {
+            visibility: visible;
+        }
+    }
+}
+
+@media screen and (max-width: 450px),
+only screen and (orientation: landscape) and (max-width: 660px) and (max-height: 300px) {
+
+    .cart-product-detail {
+        .product-item {
+            padding: 5px;
+
+            .image img { height: 50px; }
+
+            .content { padding-left: 5px; }
+
+            .product-name-section {
+                margin-top: 5px !important;
+                margin-bottom: 5px !important;
+                width: 80%;
+            }
+        }
+    }
+
+    .cart-notification.selected {
+
+        .action-btn-container {
+            flex-flow: column wrap;
+            align-items: center;
+
+            > span:first-child {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .cart-products-container .cart-product-detail .product-item {
+        .qty-container {
+            margin-left: -15px;
+        }
+    }
+}
+
+@media screen and (orientation: landscape) and (max-width: 660px) and (max-height: 300px) {
+    .cart-notification.selected {
+        .cart-product-detail, .action-btn-container {
+            width: 50%;
+        }
+
+        .action-btn-container {
+            position: absolute;
+            top: 30px;
+            right: 0px;
+        }
+    }
+}

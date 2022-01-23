@@ -1,0 +1,16 @@
+.home {
+
+    .product-container {
+
+        li { width: 310px; margin-top: 10px !important; }
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .home {
+        .product-container {
+            li { width: 250px; }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+
+.order-summary-container {
+
+    max-width: 300px;
+
+    .pricing {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 10px;
+    }
+
+    .checkout-btn {
+        width: 250px;
+        height: 50px;
+        background-color: var(--dark-yellow);
+        border-radius: 5px;
+        font-size: 20px;
+    }
+
+    .checkout-btn {
+        margin-top: 20px;
+    }
+
+    .order-details {
+        background: #eee;
+        border-radius: 5px;        
+    }
+
+    .final-total-container {
+        border-top: 1px solid #fff;
+        margin-top: 15px;
+        padding-top: 15px;
+        padding-bottom: 5px;    
+    }
+
+    .discount-container {
+        color: green;
+    }
+}

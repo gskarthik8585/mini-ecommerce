@@ -1,0 +1,11 @@
+
+.toast-wrapper {
+    z-index: 10000;
+    top: 75px;
+
+    .close-btn {
+        top: -3px !important;
+        right: -3px;
+
+    }
+}

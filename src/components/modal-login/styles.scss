@@ -1,0 +1,11 @@
+
+
+.login-modal .modal-body .submit-btn {
+    background-color: var(--dark-yellow);
+    border: 1px solid var(--dark-yellow);
+    color: #000;
+}
+
+.login-modal .modal-body {
+    form { max-width: 350px; }
+}
